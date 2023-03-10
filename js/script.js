@@ -23,3 +23,29 @@
 // </script>
 // </body>
 // </html>
+
+// declaring a variable and printing its initial value
+
+var a = 10;
+document.getElementById(
+  "initValue"
+).innerHTML = ` <h2> The initial value of a is: ${a} </h2>`;
+
+// adding a pre increment and result with button
+
+
+function preIncrement(){
+
+document.getElementById(
+  "preIncrementAndPostIncrement"
+).innerHTML += ` <h2>Value of ++a: ${++a} </h2>`;
+}
+
+// adding a post increment and result with button
+
+function postIncrement() {
+
+  document.getElementById(
+    "preIncrementAndPostIncrement"
+  ).innerHTML += ` <h2>Value of a++: ${a++} </h2>`;
+}
