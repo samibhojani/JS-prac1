@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+.container  {
+    width: 95%;
+    margin: 0 5% 0 5%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+nav {
+    height: 40px;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+nav ul li a{
+        text-decoration: none;
+        color: #fff;
+}
+nav ul li a:hover{
+    color: #979797;
+}
+
+.chSixToNine {
+    width: 100%;
+}
+
+.chSixToNine h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.qOne {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+}
+
+.qOne h4 {
+    width: 20%;
+}
+
+.diButtons {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dibuttons button {
+    height: 200px;
+}
+
+.resultqOne {
+    width: 50%;
+    height: 500px;
+}
+

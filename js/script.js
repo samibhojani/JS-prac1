@@ -37,8 +37,10 @@ document.getElementById(
 function preIncrement(){
 
 document.getElementById(
-  "preIncrementAndPostIncrement"
-).innerHTML += ` <h2>Value of ++a: ${++a} </h2>`;
+  "incrementDecrement"
+).innerHTML += ` <h3>++a: ${++a} </h3> 
+    <h5> Now the value of a is: ${a} </h5>
+ `;
 }
 
 // adding a post increment and result with button
@@ -46,6 +48,31 @@ document.getElementById(
 function postIncrement() {
 
   document.getElementById(
-    "preIncrementAndPostIncrement"
-  ).innerHTML += ` <h2>Value of a++: ${a++} </h2>`;
+    "incrementDecrement"
+  ).innerHTML += ` <h3>a++: ${a++} </h3> 
+    <h5> Now the value of a is: ${a} </h5>
+ `;
+}
+
+// adding a pre decrement and result with button
+
+
+function preDecrement(){
+
+document.getElementById(
+  "incrementDecrement"
+).innerHTML += ` <h3>--a: ${--a} </h3> 
+    <h5> Now the value of a is: ${a} </h5>
+ `;
+}
+
+// adding a post increment and result with button
+
+function postDecrement() {
+
+  document.getElementById(
+    "incrementDecrement"
+  ).innerHTML += ` <h3>a--: ${a--} </h3> 
+    <h5> Now the value of a is: ${a} </h5>
+ `;
 }
