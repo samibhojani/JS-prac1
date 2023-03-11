@@ -1,10 +1,3 @@
-// <!DOCTYPE html>
-// <html>
-// <body>
-// <h1>The Document Object</h1>
-// <h2>The write() Method</h2>
-// <p>Write some HTML elements directly to the HTML output:</p>
-// <input id="myemail" type="number"/> <button onclick="renderResult()" >Submit</button>
 // <script>
 // function renderResult(){
 // var value = document.getElementById("myemail").value
@@ -38,7 +31,7 @@ function preIncrement(){
 
 document.getElementById(
   "incrementDecrement"
-).innerHTML += ` <h3>++a: ${++a} </h3> 
+).innerHTML += ` <h3>The value of ++a is: ${++a} </h3> 
     <h5> Now the value of a is: ${a} </h5>
  `;
 }
@@ -49,7 +42,7 @@ function postIncrement() {
 
   document.getElementById(
     "incrementDecrement"
-  ).innerHTML += ` <h3>a++: ${a++} </h3> 
+  ).innerHTML += ` <h3>The value of a++ is: ${a++} </h3> 
     <h5> Now the value of a is: ${a} </h5>
  `;
 }
@@ -61,7 +54,7 @@ function preDecrement(){
 
 document.getElementById(
   "incrementDecrement"
-).innerHTML += ` <h3>--a: ${--a} </h3> 
+).innerHTML += ` <h3>The value of --a is: ${--a} </h3> 
     <h5> Now the value of a is: ${a} </h5>
  `;
 }
@@ -72,7 +65,65 @@ function postDecrement() {
 
   document.getElementById(
     "incrementDecrement"
-  ).innerHTML += ` <h3>a--: ${a--} </h3> 
+  ).innerHTML += ` <h3>The value of a-- is: ${a--} </h3> 
     <h5> Now the value of a is: ${a} </h5>
  `;
 }
+
+
+var a = 2;
+var b = 1;
+var result;
+
+
+
+function stateOne(){
+
+  document.getElementById(
+    "pi"
+  ).innerHTML += ` <h3><b>--a</b> </h3>
+      <h5> a is: ${a}</h5>
+      <h5> b is: ${b}</h5>
+      <h5> result is: ${--a}</h5>  
+   `;
+  }
+
+
+function stateTwo(){
+
+    document.getElementById(
+      "pis"
+    ).innerHTML += ` <h3><b>--a - --b</b> </h3>
+        <h5> a is: ${a}</h5>
+        <h5> b is: ${b}</h5>
+        <h5> result is: ${--a - --b}</h5>  
+     `;
+    }
+
+function stateThree(){
+
+      document.getElementById(
+        "pisa"
+      ).innerHTML += ` <h3><b>--a - --b + ++b</b> </h3>
+          <h5> a is: ${a}</h5>
+          <h5> b is: ${b}</h5>
+          <h5> result is: ${--a - --b + ++b}</h5>  
+       `;
+      }
+
+function stateFour(){
+
+        document.getElementById(
+          "pisaa"
+        ).innerHTML += ` <h3><b>--a - --b + ++b + b--</b> </h3>
+            <h5> a is: ${a}</h5>
+            <h5> b is: ${b}</h5>
+            <h5> result is: ${--a - --b + ++b + b--}</h5>  
+         `;
+        }
+  
+function greetings(){
+
+          var user = document.getElementById("userName").value;
+                     document.getElementById("greetings").innerHTML += ` <h1> Greetings! ${user} </h1>`;
+          }
